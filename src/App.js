@@ -12,6 +12,7 @@ import Landing from "./pages/Landing/Landing";
 
 // Dashboard
 import Home from "./pages/Home/Home";
+import Communities from "./pages/Communities/Communities";
 
 function App() {
   return (
@@ -23,6 +24,7 @@ function App() {
         </Route>
         <Route path="/home" element={<HomeLayout />}>
           <Route index element={<Home />} />
+          <Route path="communities" element={<Communities />} />
           <Route path="*" element={<NoPage />} />
         </Route>
       </Routes>
