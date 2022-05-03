@@ -19,7 +19,7 @@ const Register = () => {
                   className="btn btn-outline-secondary border-0 fs-5 text-light"
                 >
                   <i class="fa-brands fa-google-plus-square fs-3 me-2"></i>{" "}
-                  Google ile Giriş Yap
+                  Google ile Kaydol
                 </a>
               </div>
             </div>
