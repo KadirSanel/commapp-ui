@@ -7,6 +7,10 @@ import HomeLayout from "./pages/Layouts/HomeLayout/HomeLayout";
 // 404 Page
 import NoPage from "./pages/NoPage";
 
+//Auth
+import Login from "./pages/Auth/Login/Login";
+import Register from "./pages/Auth/Register/Register";
+
 // Landing
 import Landing from "./pages/Landing/Landing";
 
@@ -20,13 +24,16 @@ function App() {
       <Routes>
         <Route path="/" element={<Layout />}>
           <Route index element={<Landing />} />
-          <Route path="*" element={<NoPage />} />
+        </Route>
+        <Route path="/auth">
+          <Route path="login" element={<Login />} />
+          <Route path="register" element={<Register />} />
         </Route>
         <Route path="/home" element={<HomeLayout />}>
           <Route index element={<Home />} />
           <Route path="communities" element={<Communities />} />
-          <Route path="*" element={<NoPage />} />
         </Route>
+        <Route path="*" element={<NoPage />} />
       </Routes>
     </BrowserRouter>
   );
