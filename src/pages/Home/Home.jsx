@@ -5,7 +5,7 @@ const Home = () => {
   return (
     <>
       <div className="row">
-        <div className="col-10">
+        <div className="col-12">
           <Notice></Notice>
           <Notice></Notice>
           <Notice></Notice>

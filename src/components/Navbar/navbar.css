@@ -16,6 +16,9 @@ html {
 .sidebar {
   display: flex;
   height: 100%;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
 }
 
 .feed-profile-img {
@@ -25,4 +28,10 @@ html {
 
 .w-100 {
   width: 100%;
+}
+
+.sticky-left {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
 }
